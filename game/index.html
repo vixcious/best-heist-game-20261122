@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Midnight Vault — a heist game</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #0c0916;
+    color: #f4f1ff;
+    font-family: sans-serif;
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  canvas {
+    display: block;
+    max-width: 100vw;
+    max-height: calc(100vh - 48px);
+    background: #14101f;
+    border: 3px solid #120d1c;
+    outline: none;
+  }
+  p.hint {
+    margin: 10px 0 0;
+    font-size: 13px;
+    color: #a99ec7;
+    text-align: center;
+  }
+  p.hint b { color: #f2c14e; }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="720" tabindex="0"></canvas>
+<p class="hint"><b>WASD / arrows</b> move &nbsp;·&nbsp; <b>SHIFT</b> sneak &nbsp;·&nbsp; hold <b>SPACE</b> at the vault to crack it &nbsp;·&nbsp; <b>click</b> smoke bomb &nbsp;·&nbsp; <b>E</b> EMP camera &nbsp;·&nbsp; <b>R</b> restart</p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
